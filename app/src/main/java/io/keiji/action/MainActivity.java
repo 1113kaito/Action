@@ -1,5 +1,6 @@
 package io.keiji.action;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -14,6 +15,9 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onGameOver(){
         Toast.makeText(this,"Game Over",Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(this,StartActivity.class);
+        startActivity(intent);
     }
 
     @Override
