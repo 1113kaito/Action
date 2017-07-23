@@ -196,7 +196,6 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
             @Override
             public void run() {
                 gameOverCallback.onGameOver();
-
             }
         });
 
