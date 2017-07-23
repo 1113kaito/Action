@@ -24,7 +24,8 @@ public class StartActivity extends AppCompatActivity{
     }
     public void start(View v){
 
-      
+      Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
 
     }
 
