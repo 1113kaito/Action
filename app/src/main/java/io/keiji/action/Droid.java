@@ -54,6 +54,7 @@ public class Droid {
         this.hitRect.left += HIT_MARGIN_LEFT;
         this.hitRect.right -= HIT_MARGIN_RIGHT;
         //GameViewにすでにある自機を表示させる処理をここに移動
+        // 新しいコメント
         this.callback = callback;
     }
     public void draw(Canvas canvas){
