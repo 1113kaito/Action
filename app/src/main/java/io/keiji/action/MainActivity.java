@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onGameOver(){
         Toast.makeText(this,"Game Over",Toast.LENGTH_LONG).show();
+
+        Intent intent =new Intent(this,StartActivity.class);
+        startActivity(intent);
     }
 
     @Override
