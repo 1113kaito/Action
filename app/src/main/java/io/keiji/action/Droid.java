@@ -56,6 +56,7 @@ public class Droid {
         //GameViewにすでにある自機を表示させる処理をここに移動
         // 新しいコメント
         //ああああああああああああああああああああ
+        
         this.callback = callback;
     }
     public void draw(Canvas canvas){
