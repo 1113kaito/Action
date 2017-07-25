@@ -4,15 +4,22 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="GameOver"
+        android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:id="@+id/textView"
-        android:textSize="123sp" />
+        android:id="@+id/textView" />
 
     <Button
         android:text="タイトル"
         android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:id="@+id/button" />
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="start" />
+
+    <Button
+        android:text="コンティニュー"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="play" />
 </LinearLayout>

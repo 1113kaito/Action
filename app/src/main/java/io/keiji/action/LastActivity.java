@@ -8,28 +8,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class StartActivity extends AppCompatActivity{
+public class LastActivity extends AppCompatActivity{
+
     TextView textView;
     Button start;
+    Button last;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
-        textView = (TextView)findViewById(R.id.textView2);
-        start = (Button)findViewById(R.id.button2);
-
+        setContentView(R.layout.activity_last);
+        textView = (TextView) findViewById(R.id.textView);
+        start = (Button)findViewById(R.id.button);
+        last = (Button)findViewById(R.id.button2);
 
     }
     public void start(View v){
 
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
     }
+    public void play(View v){
 
 
-
+    }
 }
-
-
