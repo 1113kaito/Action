@@ -13,14 +13,14 @@
     <Button
         android:text="タイトル"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:onClick="start" />
+        android:onClick="start"
+        android:layout_height="50dp" />
 
     <Button
         android:text="コンティニュー"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:onClick="play" />
+        android:onClick="play"
+        android:layout_height="50dp" />
 </LinearLayout>

@@ -4,12 +4,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Action"
+        android:text=" Action"
         android:layout_width="match_parent"
         android:id="@+id/textView2"
-        android:textSize="180sp"
+        android:textSize="100sp"
         android:background="@android:drawable/bottom_bar"
-        android:layout_height="230dp" />
+        android:layout_weight="1"
+        android:layout_height="200dp" />
 
     <Button
         android:text="Start"
