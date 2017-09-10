@@ -9,7 +9,7 @@ public class Ground {
 
 
     private int COLOR = Color.rgb(153,76,0);//茶色
-    private int COLORGreen = Color.rgb(0,128,0);
+    private int COLORGreen = Color.rgb(0,230,0);
     private Paint paint = new Paint();
     private Paint paintGreen = new Paint();
 
@@ -17,7 +17,7 @@ public class Ground {
     final Rect rectGreen;
     public Ground(int left,int top,int right,int bottom){
         rect = new Rect(left,top,right,bottom);
-        rectGreen = new Rect(left,top +20,right,top);
+        rectGreen = new Rect(left,top +34,right,top);
 
         paint.setColor(COLOR);
         paintGreen.setColor(COLORGreen);

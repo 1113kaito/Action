@@ -19,6 +19,11 @@
                 android:configChanges="orientation|screenSize|keyboardHidden"
                 android:screenOrientation="landscape"
                 />
+        <activity
+            android:name=".GoalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape"
+            />
 
         <activity
                 android:name=".FirstActivity"

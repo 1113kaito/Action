@@ -1,6 +1,7 @@
 package io.keiji.action;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -43,6 +44,8 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     private final Random rand = new Random(System.currentTimeMillis());
 
     private Bitmap droidBitmap;
+
+    private int windowCount = 0;
 
     private Droid droid;
 
@@ -229,11 +232,20 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
         }
 
         if (lastGround.isShown(width,height)){
-            for (int i = 0;i < ADD_GROUND_COUNT;i++){
+            for (int i = 0; i < ADD_GROUND_COUNT;i++){
                 int left = lastGround.rect.right;
 
                 int groundHeight = rand.nextInt(height / GROUND_BLOCK_HEIGHT) *
                         GROUND_BLOCK_HEIGHT / 2 + GROUND_BLOCK_HEIGHT;
+                System.out.println(i + "こ目のグランドです");
+
+                if (i == 4){
+                    windowCount++;
+                    System.out.println(windowCount);
+                }
+                if (windowCount == 6){
+                   Intent intent = new Intent(getContext(), LastActivity.class);
+                }
 
                 int top = height - groundHeight;
                 int right = left + GROUND_WIDTH;
