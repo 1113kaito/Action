@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:drawable/bottom_bar">
 
     <TextView
         android:text="Action"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:id="@+id/textView2"
-        android:textSize="200sp"
-        android:background="@android:drawable/bottom_bar" />
+        android:textSize="140sp"
+        android:background="@android:drawable/bottom_bar"
+        android:textAlignment="center" />
 
     <Button
         android:text="Start"
         android:layout_width="match_parent"
         android:layout_height="86dp"
         android:id="@+id/button2"
-        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:background="@android:drawable/picture_frame"
         android:onClick="startGame" />
 
 </LinearLayout>

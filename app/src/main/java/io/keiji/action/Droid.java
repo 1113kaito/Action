@@ -88,6 +88,7 @@ public class Droid {
         //ここから
         if (velocity < 0&& velocity < -distanceFromGround){
             velocity = -distanceFromGround;
+            velocity = -distanceFromGround;
         }//地面との距離＜落下速度は、自機が地面を突き抜けてしまうので、地面との距離だけ移動する様に調整する
 
         rect.offset(0,Math.round(-1 * velocity));
