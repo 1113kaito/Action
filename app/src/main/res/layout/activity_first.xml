@@ -6,16 +6,17 @@
     <TextView
         android:text="Action"
         android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:id="@+id/textView2"
-        android:textSize="180sp"
-        android:background="@android:drawable/bottom_bar"
-        android:layout_height="230dp" />
+        android:textSize="200sp"
+        android:background="@android:drawable/bottom_bar" />
 
     <Button
         android:text="Start"
         android:layout_width="match_parent"
+        android:layout_height="86dp"
         android:id="@+id/button2"
         android:background="@android:drawable/editbox_dropdown_light_frame"
-        android:onClick="start"
-        android:layout_height="66dp" />
+        android:onClick="startGame" />
+
 </LinearLayout>

@@ -26,9 +26,15 @@ public class LastActivity extends AppCompatActivity{
 
     }
     public void start(View v){
+        Intent intent = new Intent(this, FirstActivity.class);
+        startActivity(intent);
 
-    }
+        }
+
+
     public void play(View v){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
 
 
     }

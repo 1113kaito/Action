@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onGameOver(){
-        Toast.makeText(this,"GameOver",Toast.LENGTH_LONG).show();
-
+        Intent intent = new Intent(this,LastActivity.class);
+        startActivity(intent)
+        ;
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
