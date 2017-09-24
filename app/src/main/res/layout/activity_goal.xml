@@ -12,7 +12,7 @@
         android:layout_height="150dp" />
 
     <Button
-        android:text="コンティニュー"
+        android:text="リプレイ"
         android:layout_width="match_parent"
         android:id="@+id/button2"
         android:onClick="play"

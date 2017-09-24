@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -21,6 +22,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
+
 
 
     private static final float POWER_GAUGE_HEIGHT = 30;
@@ -243,8 +246,13 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                     windowCount++;
                     System.out.println(windowCount);
                 }
-                if (windowCount == 6){
-                   Intent intent = new Intent(getContext(), LastActivity.class);
+                if (windowCount == 5){
+
+                   Intent intent = new Intent(getContext(), GoalActivity
+                           .class);
+                    Context context = getContext();
+                    context.startActivity(intent);
+
                 }
 
                 int top = height - groundHeight;

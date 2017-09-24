@@ -2,6 +2,7 @@ package io.keiji.action;
 
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,6 +14,8 @@ public class LastActivity extends AppCompatActivity{
     TextView textView;
     Button start;
     Button last;
+    private MediaPlayer mp;
+
 
 
 
@@ -23,11 +26,14 @@ public class LastActivity extends AppCompatActivity{
         textView = (TextView) findViewById(R.id.textView);
         start = (Button)findViewById(R.id.button);
         last = (Button)findViewById(R.id.button2);
+        mp = MediaPlayer.create(this,R.raw.gameover);
+        mp.start();
 
     }
     public void start(View v){
         Intent intent = new Intent(this, FirstActivity.class);
         startActivity(intent);
+        mp.stop();
 
         }
 
@@ -35,6 +41,7 @@ public class LastActivity extends AppCompatActivity{
     public void play(View v){
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+        mp.stop();
 
 
     }
